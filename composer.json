@@ -1,0 +1,35 @@
+{
+    "name": "fredcarterwolf/laravel-adsense",
+    "description": "Display Adsense ads in your Laravel.",
+    "keywords": ["framework", "laravel","Google Adsense"],
+    "type": "library",
+    "require": {
+        "php": "^7.2|^7.3|^8.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Steen Fredcarterwolf",
+            "email": "steen@fredcarterwolf.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Fredcarterwolf\\Adsense\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Fredcarterwolf\\Adsense\\AdsenseServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
