@@ -7,8 +7,8 @@ class AdsenseBuilder
     public function show($name)
     {
         return view('adsense::adsense')->with([
-            'ad_client'                 => config("adsense.client_id"),
-            'ad_crossorigin'            => config("adsense.ad_crossorigin", "anonymous"),
+            // 'ad_client'                 => config("adsense.client_id"),
+            // 'ad_crossorigin'            => config("adsense.ad_crossorigin", "anonymous"),
             'ad_style'                  => config("adsense.ads.$name.ad_style", "display:block;"),
             'ad_slot'                   => config("adsense.ads.$name.ad_slot", null),
             'ad_format'                 => config("adsense.ads.$name.ad_format", null),
